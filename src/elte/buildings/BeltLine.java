@@ -12,7 +12,7 @@ public class BeltLine {
         this.productive = productive;
     }
 
-    public void move() {
+    public void move()  {
         Resource resource = gatherable.gather();
         productive.produce(resource);
     }

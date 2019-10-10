@@ -6,8 +6,8 @@ import elte.resources.IronPlate;
 import elte.resources.Resource;
 
 public class GreenCircuitFactory extends Factory {
-    Resource ironPlate;
-    Resource copperWire;
+    private Resource ironPlate;
+    private Resource copperWire;
 
     @Override
     public void produce(Resource resource) {

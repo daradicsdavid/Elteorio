@@ -9,6 +9,9 @@ public abstract class Factory implements Productive, Gatherable {
 
     @Override
     public Resource gather() {
+        if(product==null){
+            throw new NothingProducedError();
+        }
         return product;
     }
 }
